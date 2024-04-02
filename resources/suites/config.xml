@@ -11,10 +11,10 @@
         <protocol>https</protocol>
 
         <!-- title of the document -->
-        <documentTitle>SafeRailway UI Automation</documentTitle>
+        <documentTitle>Heroku UI Automation</documentTitle>
 
         <!-- report name - displayed at top-nav -->
-        <reportName>SafeRailway UI Automation</reportName>
+        <reportName>Heroku UI Automation</reportName>
 
         <!-- report headline - displayed at top-nav, after reportHead- line -->
         <reportHeadline>Chieu</reportHeadline>

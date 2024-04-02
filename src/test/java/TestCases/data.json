@@ -1,7 +1,13 @@
 {
-  "TC01_Able_book_ticket_with_valid_data": [
+  "tc0001": [
     {
-      "Data": "Data1"
+      "Data": "Data1",
+      "AvailableExample": "Sortable Data Tables",
+      "LastName": "Smith",
+      "FirstName": "John",
+      "Email": "jsmith@gmail.com",
+      "Due": "$50.00",
+      "Website": "http://www.jsmith.com"
     }
   ]
 }
