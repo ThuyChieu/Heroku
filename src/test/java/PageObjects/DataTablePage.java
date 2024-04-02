@@ -54,32 +54,95 @@ public class DataTablePage {
         return tableValue;
     }
 
-    public void clickOnHeaderOfTable() {
-        getFirstRow("First Name").click();
+    public void clickOnHeaderOfTable(String value) {
+        getFirstRow(value).click();
     }
 
-    public List<String> getOriginalList() {
+    public List<String> getFirstNameOriginalList() {
         List<String> originalList = new ArrayList<>();
-
         int i;
         for (i = 1; i <= 4; i++) {
             originalList.add(getFirstNameColumn(String.valueOf(i)));
+        }
+        return originalList;
+    }
+
+    public List<String> getFirstNameSortedList() {
+        List<String> sortedList = new ArrayList<>();
+        int i;
+        for (i = 1; i <= 4; i++) {
+            sortedList.add(getFirstNameColumn(String.valueOf(i)));
+        }
+        return sortedList;
+    }
+
+    public List<String> getLastNameOriginalList() {
+        List<String> originalList = new ArrayList<>();
+        int i;
+        for (i = 1; i <= 4; i++) {
             originalList.add(getLastNameColumn(String.valueOf(i)));
+        }
+        return originalList;
+    }
+
+    public List<String> getLastNameSortedList() {
+        List<String> sortedList = new ArrayList<>();
+        int i;
+        for (i = 1; i <= 4; i++) {
+            sortedList.add(getLastNameColumn(String.valueOf(i)));
+        }
+        return sortedList;
+    }
+
+    public List<String> getEmailOriginalList() {
+        List<String> originalList = new ArrayList<>();
+        int i;
+        for (i = 1; i <= 4; i++) {
             originalList.add(getEmailColumn(String.valueOf(i)));
+        }
+        return originalList;
+    }
+
+    public List<String> getEmailSortedList() {
+        List<String> sortedList = new ArrayList<>();
+        int i;
+        for (i = 1; i <= 4; i++) {
+            sortedList.add(getEmailColumn(String.valueOf(i)));
+        }
+        return sortedList;
+    }
+
+    public List<String> getWebsiteOriginalList() {
+        List<String> originalList = new ArrayList<>();
+        int i;
+        for (i = 1; i <= 4; i++) {
             originalList.add(getWebsiteColumn(String.valueOf(i)));
+        }
+        return originalList;
+    }
+
+    public List<String> getWebsiteSortedList() {
+        List<String> sortedList = new ArrayList<>();
+        int i;
+        for (i = 1; i <= 4; i++) {
+            sortedList.add(getWebsiteColumn(String.valueOf(i)));
+        }
+        return sortedList;
+    }
+
+    public List<String> getDueOriginalList() {
+        List<String> originalList = new ArrayList<>();
+        int i;
+        for (i = 1; i <= 4; i++) {
             originalList.add(getDueColumn(String.valueOf(i)));
         }
         return originalList;
     }
 
-    public List<String> getSortedList() {
+    public List<String> getDueSortedList() {
         List<String> sortedList = new ArrayList<>();
         int i;
         for (i = 1; i <= 4; i++) {
-            sortedList.add(getFirstNameColumn(String.valueOf(i)));
-            sortedList.add(getLastNameColumn(String.valueOf(i)));
-            sortedList.add(getEmailColumn(String.valueOf(i)));
-            sortedList.add(getWebsiteColumn(String.valueOf(i)));
             sortedList.add(getDueColumn(String.valueOf(i)));
         }
         return sortedList;
