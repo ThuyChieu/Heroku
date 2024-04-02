@@ -48,6 +48,9 @@ public class tc0001 extends BaseTest {
         Assert.assertEquals(website, websiteExpected, "Website is not the same as expected");
 
         logStep = TestReporter.logStepInfo(logMethod, "Step #4: Check the data in the columns is sorted ASC/DESC properly");
-        dataTablePage.clickOnHeaderOfTable("First Name");
+        dataTablePage.clickOnHeaderOfTable();
+        String originalData = String.valueOf(dataTablePage.getOriginalList());
+        String sortedData = String.valueOf(dataTablePage.getSortedList());
+        Assert.assertEquals(originalData, sortedData);
     }
 }

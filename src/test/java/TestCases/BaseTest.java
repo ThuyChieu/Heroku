@@ -95,7 +95,7 @@ public class BaseTest extends Utility{
         //update test execution status to the testCaseList
         testCaseList.add(testNameWithStatus + ": " + logMethod.getStatus());
 
-//        quit(logMethod);
+        quit(logMethod);
         logMethod = null;
 
         log4j.info("AfterMethod - Ends");
